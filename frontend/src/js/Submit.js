@@ -10,15 +10,32 @@ import 'jquery-custom-select'
 
 export default class Submit {
   constructor () {
-    let select = $('select.form-control')
+     $.ajax({
+      url: 'http://api.journalismaward.in.ua/nominations/index',
+      method: 'GET',
+      type: 'json',
+      success: function (response) {
+        let html = `<option value=""> Назва номінації </option>`;
+        response.map( temp => {
+            html += `<option value="${temp.label}">${ temp.label }</option>`;
+        });
+        $('#nomination').html(html);
+        let select = $('#nomination');
 
-    select.customSelect()
+        select.customSelect()
 
-    select.change(function () {
-      console.log($('#' + this.id + '_field').get(0))
-      $('#' + this.id + '_field').
-        attr('value', $(this).find('option:selected').val())
+        select.change(function () {
+          console.log($('#' + this.id + '_field').get(0))
+          $('#' + this.id + '_field').
+            attr('value', $(this).find('option:selected').val())
+        })
+        // $('#nomination').customSelect();
+      },
+      error: function () {
+        alert('server error!');
+      },
     })
+    
 
     $('input.phone-mask').mask('+38 (000) 000-00-00')
 
@@ -122,19 +139,7 @@ export default class Submit {
   }
 
   step1 () {
-    $('.form_step2').show();
-    $('.form_step1').hide();
-     $.ajax({
-      url: 'http://localhost:8082/nominations/index',
-      method: 'GET',
-      type: 'json',
-      success: function (response) {
-        console.log(response);
-      },
-      error: function () {
-        alert('server error!');
-      },
-    })
+
     $('.form_step1 .btn-next').click(function (e) {
       e.preventDefault()
 

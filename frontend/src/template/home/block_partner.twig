@@ -1,0 +1,51 @@
+{% set partners = [
+    {
+        logo:'/img/home/block_partner/jusade.jpg',
+        label:'Юсейд',
+        src:'https://www.usaid.gov/uk/ukraine/our-work',
+    },
+    {
+        logo:'/img/home/block_partner/internews.jpg',
+        label:'Інетерньюз',
+        src:'https://internews.in.ua/uk/',
+    },
+    {
+        logo:'/img/home/block_partner/shvetsіya.jpg',
+        label:'Швеція',
+        src:'https://www.swedenabroad.se/uk/embassies/ukraine-kyiv/',
+    },
+] %}
+<div class="container clearfix">
+    <div class="block_partner">
+        <div class="title">Наші партнери</div>
+        <div class="body clearfix">
+            <div class="control_prev">
+                <i class="slider_prev dark"></i>
+            </div>
+            <div class="owl-carousel">
+                {% for item in partners %}
+                    <div class="carusel_item">
+                        <a href="{{ item.src }}" target="_blank">
+                            <div class="img">
+                                <img src="{{ item.logo }}" alt="{{ item.label }}"/>
+                            </div>
+                            <div class="name">{{ item.label }}</div>
+                        </a>
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="control_next">
+                <i class="slider_next dark"></i>
+            </div>
+        </div>
+        <div class="control clearfix">
+            <div class="control_prev">
+                <i class="slider_prev dark"></i>
+            </div>
+
+            <div class="control_next">
+                <i class="slider_next dark"></i>
+            </div>
+        </div>
+    </div>
+</div>

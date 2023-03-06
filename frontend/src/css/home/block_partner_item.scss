@@ -1,0 +1,112 @@
+.owl-carousel {
+  display: inline-flex;
+  float: left;
+  width: calc(100% - 190px);
+  height: 175px;
+  align-items: center;
+  justify-content: center;
+
+  @include res($tab) {
+    margin-bottom: 30px;
+    display: block;
+    float: none;
+    width: 100%;
+  }
+
+  @include res($mob) {
+    margin-bottom: 30px;
+    display: block;
+    float: none;
+    width: 100%;
+  }
+
+  .owl-item {
+    &.active {
+      @include res($mob) {
+      }
+    }
+  }
+
+  .carusel_item {
+    display: inline-flex;
+    background: #FFFFFF;
+    border-radius: 3px;
+    width: 260px;
+    height: 175px;
+    align-items: center;
+    justify-content: center;
+
+    @include res($tab) {
+      width: 100%;
+    }
+
+    @include res($mob) {
+      width: 100%;
+    }
+
+    .img {
+      img {
+        width: 170px;
+        height: 58px;
+        filter: grayscale(100%);
+        transition: 1s;
+
+        @include res($tab) {
+          filter: grayscale(0%);
+        }
+
+        @include res($mob) {
+          filter: grayscale(0%);
+        }
+      }
+    }
+
+    .name {
+      display: none;
+      margin: 10px 30px 30px 30px;
+
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: -0.3px;
+      color: #1B1B3A;
+      transition: 1s;
+
+      @include res($tab) {
+        margin: 7px 47px 20px 15px;
+        display: none;
+
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: -0.3px;
+        color: #1B1B3A;
+      }
+
+      @include res($mob) {
+        margin: 7px 47px 20px 15px;
+        display: none;
+
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: -0.3px;
+        color: #1B1B3A;
+      }
+    }
+
+    &:hover {
+      .img {
+        img {
+          filter: grayscale(0%);
+        }
+      }
+    }
+  }
+}

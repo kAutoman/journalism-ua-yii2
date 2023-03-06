@@ -1,0 +1,129 @@
+.block_partner {
+  padding: 210px 40px 120px 40px;
+
+  @include res($tab) {
+    padding: 50px 16px 50px 16px;
+  }
+
+  @include res($mob) {
+    padding: 50px 16px 50px 16px;
+  }
+
+  .title {
+    margin: 0 115px 50px 115px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 54px;
+    letter-spacing: -1px;
+    color: #1B1B3A;
+
+    @include res($tab) {
+      margin: 0 0 30px 0;
+
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 28px;
+      line-height: 32px;
+      letter-spacing: -1px;
+      color: #1B1B3A;
+    }
+
+    @include res($mob) {
+      margin: 0 0 30px 0;
+
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 28px;
+      line-height: 32px;
+      letter-spacing: -1px;
+      color: #1B1B3A;
+    }
+  }
+
+  .body {
+    .control_prev {
+      display: inline-flex;
+      float: left;
+      width: 56px;
+      height: 175px;
+      align-items: center;
+      justify-content: center;
+
+      margin-right: 38px;
+
+      .slider_prev {
+        margin: 0;
+      }
+
+      @include res($tab) {
+        display: none;
+      }
+
+      @include res($mob) {
+        display: none;
+      }
+    }
+
+    @import "block_partner_item";
+
+    .control_next {
+      display: inline-flex;
+      float: left;
+      width: 56px;
+      height: 175px;
+      align-items: center;
+      justify-content: center;
+
+      margin-left: 38px;
+
+      @include res($tab) {
+        display: none;
+      }
+
+      @include res($mob) {
+        display: none;
+      }
+    }
+  }
+
+  .control {
+    display: none;
+
+    @include res($tab) {
+      display: block;
+      width: 140px;
+      margin: 0 auto;
+
+      .control_prev {
+        display: block;
+        float: left;
+      }
+
+      .control_next {
+        display: block;
+        float: right;
+      }
+    }
+
+    @include res($mob) {
+      display: block;
+      width: 140px;
+      margin: 0 auto;
+
+      .control_prev {
+        display: block;
+        float: left;
+      }
+
+      .control_next {
+        display: block;
+        float: right;
+      }
+    }
+  }
+}

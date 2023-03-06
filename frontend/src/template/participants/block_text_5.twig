@@ -1,0 +1,46 @@
+{% set nominations = [
+    {
+        text:'Найкраще інтерв’ю',
+        link: '/criteria.html#best_interview'
+    },
+    {
+        text:'Найкращий репортаж',
+        link: '/criteria.html#best_coverage'
+    },
+    {
+        text:'Найкраще новинне висвітлення резонансної події',
+        link: '/criteria.html#resonant_event'
+    },
+    {
+        text:'Найкраща аналітика',
+        link: '/criteria.html#best_analytics'
+    },
+    {
+        text:'Найкраще розслідування',
+        link: '/criteria.html#best_investigation'
+    },
+    {
+        text:'Найкраща публіцистика',
+        link: '/criteria.html#best_nonfiction'
+    },
+    {
+        text:'Спецномінація "Конструктивна журналістика"',
+        link: '/criteria.html#special'
+    },
+] %}
+<div class="container">
+    <div class="block_text">
+        <div class="number">05.</div>
+        <div class="title">Критерії оцінки номінацій</div>
+        <div class="text">
+            <ul>
+                {% for nomination in nominations %}
+                    <li>
+                        <a href="{{ nomination.link }}" target="_blank">{{ nomination.text }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="margin"></div>
+    </div>
+</div>

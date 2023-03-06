@@ -1,0 +1,89 @@
+{% set genders = [
+    {
+        label:'Чоловіча',
+        value:'чоловіча',
+    },
+    {
+        label:'Жіноча',
+        value:'жіноча',
+    },
+    {
+        label:'Не відповідатиму',
+        value:'не відповідатиму',
+    },
+    {
+        label:'Інше',
+        value:'інше',
+    },
+] %}
+{% set fields = [
+    {
+        type:'title',
+        label:'Iнформацiя про учасника',
+    },
+    {
+        type:'text',
+        label:'ПІБ*',
+        name:'name',
+    },
+    {
+        type:'text',
+        label:'Email*',
+        name:'email',
+    },
+    {
+        type:'dropdown',
+        label:'Соцiальна стать (гендер)',
+        items: genders,
+        name:'gender',
+    },
+    {
+        type:'text',
+        label:'Кiлькiсть повних рокiв',
+        name:'age',
+    },
+    {
+        type:'text',
+        label:'Місто, в якому проживаєте',
+        name:'city',
+    },
+    {
+        type:'text',
+        label:'Назва компанії, в якій зараз працюєте',
+        name:'company_name',
+    },
+    {
+        type:'text',
+        label:'Посада',
+        name:'position',
+    },
+    {
+        type:'phone',
+        label:'Контактний телефон',
+        name:'phone',
+    },
+    {
+        type:'text',
+        label:'Досвід у журналістиці, років',
+        name:'experience',
+    },
+    {
+        type:'btn_next',
+        label:'НАСТУПНИЙ КРОК',
+    },
+] %}
+<div class="container">
+    <div class="form_step1">
+        <form action="/submit.html" class="step1_form" method="post">
+            <div class="head clearfix">
+                <div class="title">Заповніть форму</div>
+                <div class="step_title">Крок: 1 / 2</div>
+            </div>
+            <div class="body">
+                {% for field in fields %}
+                    {% include ['form/form_',field.type,'.twig']|join('') with {name:field.name, label:field.label, items:field.items} %}
+                {% endfor %}
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,15 @@
+.block_position_container {
+  &.block_position_container_participants {
+    .block_position {
+      .img {
+        @include res($tab) {
+          display: none;
+        }
+        
+        @include res($mob) {
+          display: none;
+        }
+      }
+    }
+  }
+}

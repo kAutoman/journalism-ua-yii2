@@ -1,0 +1,88 @@
+.block_header {
+  .container {
+    min-height: 385px;
+
+    @include res($tab) {
+      min-height: auto;
+    }
+
+    @include res($mob) {
+      min-height: auto;
+    }
+
+    .block_header {
+      padding: 25px 60px 0 60px;
+
+      @include res($tab) {
+        padding: 12px 16px 0 16px;
+      }
+
+      @include res($mob) {
+        padding: 12px 16px 0 16px;
+      }
+
+      .breadcrumbs {
+        list-style: none;
+
+        li {
+          display: inline-block;
+          margin-right: 10px;
+
+          a {
+            font-family: AvenirNextCyr;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+            color: #FFFFFF;
+            opacity: 0.6;
+          }
+
+          span {
+            font-family: AvenirNextCyr;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+            color: #FFFFFF;
+          }
+
+          &:first-child:after {
+            content: '';
+            width: 3px;
+            height: 12px;
+            border-right: 1px solid #ffffff;
+            opacity: 0.6;
+            margin-left: 10px;
+          }
+        }
+      }
+
+      .title {
+        margin: 90px 60px 90px 60px;
+
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 66px;
+        line-height: 78px;
+        letter-spacing: -1px;
+        color: #FFFFFF;
+
+        @include res($tab) {
+          margin: 30px 16px 30px 16px;
+
+          font-size: 30px;
+          line-height: 35px;
+        }
+
+        @include res($mob) {
+          margin: 30px 16px 30px 16px;
+
+          font-size: 30px;
+          line-height: 35px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+/*
+#config-entity-form div.tab-pane.active {
+    overflow-x: overlay;
+}
+*/
+
+.block > .nav-tabs > li > a.text-danger {
+    color: #dc3545 !important;
+    -webkit-box-shadow: 0 2px #dc3545;
+    box-shadow: 0 2px #dc3545;
+}

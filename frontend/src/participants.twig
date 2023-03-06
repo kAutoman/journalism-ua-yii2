@@ -1,0 +1,18 @@
+{% extends './template/parts/layout.twig' %}
+
+{% block title %}Учасникам{% endblock %}
+
+{% block content %}
+    {% include 'template/parts/header.twig' with {'block':'../participants/header_block.twig', 'page':'participants'} %}
+
+    {% include 'template/participants/block_space.twig' with {padding: '40px'} %}
+    {% include 'template/participants/block_text_1.twig' %}
+    {% include 'template/participants/block_text_2.twig' with {hasButton: true} %}
+    {% include 'template/participants/block_text_3.twig' %}
+    {% include 'template/participants/block_text_4.twig' %}
+    {% include 'template/participants/block_text_5.twig' with {hasButton: true} %}
+    {% include 'template/participants/block_form.twig' %}
+    {% include 'template/participants/block_space.twig' with {padding: '100px'} %}
+
+    {% include 'template/parts/footer/footer.twig' with {'page':'participants'} %}
+{% endblock %}

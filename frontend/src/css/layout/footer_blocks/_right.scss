@@ -1,0 +1,40 @@
+.right_block {
+  width: 260px;
+  float: right;
+
+  @include res($tab) {
+    width: 33%;
+  }
+
+  @include res($mob) {
+    width: 100%;
+    margin: 30px 0;
+  }
+
+  ul {
+    list-style: none;
+
+    li {
+      margin-bottom: 16px;
+
+      a {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 28px;
+
+        color: #FFFFFF;
+        opacity: 0.5;
+
+        &:hover {
+          color: #2760B6;
+        }
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

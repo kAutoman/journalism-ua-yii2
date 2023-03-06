@@ -1,0 +1,66 @@
+{% set nominations = [
+    {
+        icon:'/img/home/block_nomination/icon_1.svg',
+        text:'Найкраще інтерв’ю',
+        link: '/criteria.html#best_interview'
+    },
+    {
+        icon:'/img/home/block_nomination/icon_2.svg',
+        text:'Найкращий репортаж',
+        link: '/criteria.html#best_coverage'
+    },
+    {
+        icon:'/img/home/block_nomination/icon_3.svg',
+        text:'Найкраще новинне висвітлення резонансної події',
+        link: '/criteria.html#resonant_event'
+    },
+    {
+        icon:'/img/home/block_nomination/icon_1.svg',
+        text:'Найкраща аналітика',
+        link: '/criteria.html#best_analytics'
+    },
+    {
+        icon:'/img/home/block_nomination/icon_2.svg',
+        text:'Найкраще розслідування',
+        link: '/criteria.html#best_investigation'
+    },
+    {
+        icon:'/img/home/block_nomination/icon_3.svg',
+        text:'Найкраща публіцистика',
+        link: '/criteria.html#best_nonfiction'
+    },
+    {
+        icon:'/img/home/block_nomination/icon_1.svg',
+        text:'Спецномінація "Конструктивна журналістика"',
+        link: '/criteria.html#special'
+    },
+] %}
+<div class="block_nomination_container clearfix">
+    <div class="block_nomination">
+        <div class="head clearfix">
+            <div class="title">Номiнацiї</div>
+            <div class="controll">
+                <i class="slider_prev"></i>
+                <i class="slider_next"></i>
+            </div>
+        </div>
+        <div class="body">
+            <div class="owl-carousel">
+                {% for key, item in nominations %}
+                    <div class="carusel_item">
+                        <a href="{{ item.link }}" target="_blank">
+                            <div class="icon">
+                                <img src="{{ item.icon }}" alt="Carusel item {{ key }}"/>
+                            </div>
+                            <div class="description">
+                                <p>
+                                    {{ item.text }}
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>

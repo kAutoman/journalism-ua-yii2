@@ -1,0 +1,21 @@
+.peremozhci_text_block {
+  .container {
+    margin-top: 80px;
+
+    .block_text {
+      .title {
+        width: 100%;
+      }
+
+      .text {
+        strong {
+          font-weight: bold;
+        }
+
+        a {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

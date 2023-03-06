@@ -1,0 +1,22 @@
+{% set items = {
+    'index':'Головна',
+    'participants':'Учасникам',
+    'criteria':'Критерії оцінки номінацій',
+    'peremozhci':'Переможці',
+} %}
+<ul>
+    {% for link, label in items %}
+        {% if link == 'index' %}
+            {% set fullLink = "/" %}
+        {% else %}
+            {% set fullLink = "/"~link~".html" %}
+        {% endif %}
+        <li>
+            {% if link == page %}
+                <a href="{{ fullLink }}" class="active">{{ label }}</a>
+            {% else %}
+                <a href="{{ fullLink }}">{{ label }}</a>
+            {% endif %}
+        </li>
+    {% endfor %}
+</ul>

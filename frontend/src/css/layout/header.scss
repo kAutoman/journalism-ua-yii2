@@ -1,0 +1,17 @@
+.block_header {
+  background-color: $dark-blue;
+  background-image: url("/img/home/block_header/backgroud.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  .container {
+    min-height: 720px;
+  }
+
+  @include res($mob) {
+    &.open {
+      background-color: $dark-blue;
+      background-image: none;
+    }
+  }
+}

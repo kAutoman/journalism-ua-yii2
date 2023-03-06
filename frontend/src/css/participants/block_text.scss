@@ -1,0 +1,215 @@
+.block_text {
+  margin: 45px 260px;
+  position: relative;
+
+  @include res($tab) {
+    margin: 0;
+    margin-bottom: 70px;
+  }
+
+  @include res($mob) {
+    margin: 0;
+    margin-bottom: 70px;
+  }
+
+  .number {
+    position: absolute;
+    top: -44px;
+    left: -70px;
+
+    @include res($tab) {
+      top: -75px;
+      left: -16px;
+    }
+
+    @include res($mob) {
+      top: -75px;
+      left: -16px;
+    }
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 118px;
+    line-height: 118px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -3px;
+    font-feature-settings: 'pnum' on, 'onum' on;
+
+    color: #ffffff;
+    text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
+    opacity: 0.2;
+  }
+
+  .title {
+    width: 500px;
+    margin-bottom: 20px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 54px;
+    letter-spacing: -1px;
+    color: #1B1B3A;
+
+    @include res($tab) {
+      width: 100%;
+
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 28px;
+      line-height: 32px;
+      letter-spacing: -1px;
+    }
+
+    @include res($mob) {
+      width: 100%;
+
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 28px;
+      line-height: 32px;
+      letter-spacing: -1px;
+    }
+  }
+
+  .text {
+    h5 {
+      margin-top: 50px;
+
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 28px;
+      color: #1B1B3A;
+    }
+
+    p {
+      margin-top: 25px;
+
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 30px;
+      color: #000000;
+      opacity: 0.7;
+
+      @include res($tab) {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 28px;
+      }
+
+      @include res($mob) {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 28px;
+      }
+    }
+
+    ol {
+      margin-top: 30px;
+
+      list-style: none;
+
+      li {
+        margin-bottom: 35px;
+
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 30px;
+        color: #000000;
+        opacity: 0.7;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        img {
+          float: left;
+          margin-right: 35px;
+
+          width: 67px;
+          height: 67px;
+
+          opacity: 1;
+
+          @include res($tab) {
+            display: block;
+            float: none;
+          }
+
+          @include res($mob) {
+            display: block;
+            float: none;
+          }
+        }
+      }
+    }
+
+    ul {
+      margin-top: 30px;
+
+      list-style: none;
+
+      li {
+        position: relative;
+
+        padding-left: 31px;
+        margin-bottom: 24px;
+
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 30px;
+        color: #000000;
+        opacity: 0.7;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        &:before {
+          position: absolute;
+
+          display: block;
+
+          width: 18px;
+          height: 18px;
+
+          top: 9px;
+          left: 0;
+
+          content: '';
+          background: url("/img/participants/block_text/pencil.svg") no-repeat;
+
+          opacity: 1;
+        }
+      }
+    }
+
+    @import "block_timeline";
+  }
+
+  .btn_place {
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .margin {
+    margin-bottom: 95px;
+  }
+}

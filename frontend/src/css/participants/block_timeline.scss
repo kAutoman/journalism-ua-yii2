@@ -1,0 +1,86 @@
+.timeline {
+  margin-top: 50px;
+
+  .row {
+    margin-bottom: 60px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .date {
+      display: inline-block;
+      float: left;
+      width: 200px;
+
+      text-align: left;
+
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 30px;
+      color: #1B1B3A;
+
+      @include res($tab) {
+        width: 100px;
+
+        font-size: 14px;
+        line-height: 22px;
+      }
+
+      @include res($mob) {
+        width: 100px;
+
+        font-size: 14px;
+        line-height: 22px;
+      }
+    }
+
+    .message {
+      display: inline-block;
+      float: right;
+      width: calc(100% - 200px);
+
+      text-align: left;
+
+      @include res($tab) {
+        width: calc(100% - 100px);
+      }
+
+      @include res($mob) {
+        width: calc(100% - 100px);
+      }
+
+      .stage {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 28px;
+        color: #1B1B3A;
+        opacity: 0.5;
+      }
+
+      .text {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 40px;
+        letter-spacing: -0.2px;
+        color: #1B1B3A;
+
+        @include res($tab) {
+          font-size: 20px;
+          line-height: 26px;
+        }
+
+        @include res($mob) {
+          font-size: 20px;
+          line-height: 26px;
+        }
+      }
+    }
+  }
+}

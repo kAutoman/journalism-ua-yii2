@@ -1,0 +1,68 @@
+{
+    "name": "yiisoft/yii2-app-advanced",
+    "description": "Yii 2 Advanced Application Template",
+    "keywords": ["yii2", "framework", "advanced", "application template"],
+    "homepage": "http://www.yiiframework.com/",
+    "type": "project",
+    "license": "BSD-3-Clause",
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "repositories": [
+        {"type": "composer", "url": "https://asset-packagist.org"}
+    ],
+    "require": {
+        "php": ">=7.3",
+        "ext-json": "*",
+        "ext-dom": "*",
+        "ext-gd": "*",
+        "ext-zip": "*",
+        "yiisoft/yii2": "~2.0.29",
+        "yiisoft/yii2-jui": "~2.0",
+        "yiisoft/yii2-bootstrap": "~2.0",
+        "yiisoft/yii2-httpclient": "~2.0",
+        "yiisoft/yii2-authclient": "~2.1",
+        "yiisoft/yii2-swiftmailer": "~2.0",
+        "lav45/yii2-translated-behavior": "^1.4",
+        "vadymsemeniuk/yii2-file-processor-module": "1.0.2",
+        "metalguardian/yii2-form-builder": "~1.0",
+        "himiklab/yii2-sitemap-module": "^1.1",
+        "kartik-v/bootstrap-fileinput": "v4.2.1",
+        "kartik-v/yii2-widget-fileinput": "v1.0.0",
+        "kartik-v/yii2-widgets": "~3.4",
+        "unclead/yii2-multiple-input": "~2.0",
+        "vintage/yii2-i18n": "~1.3",
+        "vova07/yii2-imperavi-widget": "~2.0",
+        "tinymce/tinymce": "~4.9",
+        "2amigos/yii2-tinymce-widget": "~1.1",
+        "xutl/yii2-cropper-asset": "1.0.1",
+        "symfony/dom-crawler": "~2.8",
+        "symfony/css-selector": "~2.8",
+        "kartik-v/yii2-grid": "3.1.7",
+        "developeruz/yii2-db-rbac": "~1.1",
+        "conquer/codemirror": "~2.0",
+        "2amigos/yii2-selectize-widget": "^1.1",
+        "vova07/yii2-console-runner-extension": "^0.1.2",
+        "php-ffmpeg/php-ffmpeg": "^0.14.0",
+        "dmstr/yii2-adminlte-asset": "^2.1",
+        "paulzi/yii2-nested-sets" : "^1.0",
+        "bower-asset/patternfly-bootstrap-treeview": "~2.1",
+        "execut/yii2-widget-bootstraptreeview": "~1.3",
+        "cakephp/chronos": "~1.2",
+        "yii2tech/spreadsheet": "^1.0"
+    },
+    "require-dev": {
+        "yiisoft/yii2-gii": "~2.0.8",
+        "yiisoft/yii2-faker": "~2.0",
+        "yiisoft/yii2-debug": "~2.0",
+        "filp/whoops": "~2.2",
+        "symfony/var-dumper": "~4.1"
+    },
+    "autoload": {
+        "files": ["common/global.php"]
+    },
+    "config": {
+        "process-timeout": 1800,
+        "preferred-install": "dist",
+        "optimize-autoloader": true
+    }
+}

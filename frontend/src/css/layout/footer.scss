@@ -1,0 +1,53 @@
+footer {
+  width: 100%;
+  background-color: $dark-blue;
+  min-height: 330px;
+
+  .container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 60px 60px 40px 60px;
+    height: 100%;
+
+    @include res($mob) {
+      padding: 16px;
+    }
+
+    .footer_block {
+      position: relative;
+      height: 100%;
+      min-height: 176px;
+
+      .top_block {
+        min-height: 176px;
+
+        @import "footer_blocks/left";
+        @import "footer_blocks/center";
+        @import "footer_blocks/right";
+      }
+
+      .bottom_block {
+        opacity: 0.2;
+        border-top: 1px solid #FFFFFF;
+        padding-top: 40px;
+
+        @include res($mob) {
+          padding-top: 30px;
+        }
+
+        .copy {
+          color: #FFFFFF;
+          opacity: 0.8;
+          float: left;
+        }
+
+        a {
+          .vintage_logo {
+            float: right;
+          }
+        }
+      }
+    }
+  }
+}

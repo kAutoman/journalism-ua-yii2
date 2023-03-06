@@ -1,0 +1,300 @@
+.container_council {
+  background: #ffffff;
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+
+  .sub_container {
+    width: 100%;
+    max-width: 1280px;
+    padding: 0 15px;
+    margin: 0 auto;
+
+    .block_council {
+      padding: 190px 100px 90px 100px;
+
+      @include res($tab) {
+        padding: 92px 16px 50px 16px;
+      }
+
+      @include res($mob) {
+        padding: 92px 16px 50px 16px;
+      }
+
+      .head {
+        .title {
+          width: 400px;
+          float: left;
+
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 48px;
+          line-height: 54px;
+          letter-spacing: -1px;
+          color: #1B1B3A;
+
+          @include res($tab) {
+            width: 100%;
+            float: none;
+
+            margin-bottom: 20px;
+
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 32px;
+            letter-spacing: -1px;
+            color: #1B1B3A;
+          }
+
+          @include res($mob) {
+            width: 100%;
+            float: none;
+
+            margin-bottom: 20px;
+
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 32px;
+            letter-spacing: -1px;
+            color: #1B1B3A;
+          }
+        }
+
+        .description {
+          width: 440px;
+          float: right;
+
+          @include res($tab) {
+            width: 100%;
+            float: none;
+
+            margin-top: 30px;
+          }
+
+          @include res($mob) {
+            width: 100%;
+            float: none;
+
+            margin-top: 30px;
+          }
+
+          p {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 28px;
+            color: #000000;
+            opacity: 0.65;
+          }
+        }
+      }
+
+      .body {
+        margin-top: 90px;
+
+        @include res($tab) {
+          margin-top: 30px;
+        }
+
+        @include res($mob) {
+          margin-top: 30px;
+        }
+
+        .row {
+          margin-bottom: 95px;
+
+          @include res($tab) {
+            margin-bottom: 0;
+          }
+
+          @include res($mob) {
+            margin-bottom: 0;
+          }
+
+          .item {
+            width: 315px;
+            height: 400px;
+            display: inline-block;
+            position: relative;
+            margin-right: 48px;
+
+            float: left;
+
+            @include res($tab) {
+              width: 100%;
+              height: auto;
+              display: block;
+              position: relative;
+
+              margin-right: 0;
+              margin-bottom: 50px;
+            }
+
+            @include res($mob) {
+              width: 100%;
+              height: auto;
+              display: block;
+              position: relative;
+
+              margin-right: 0;
+              margin-bottom: 30px;
+            }
+
+            &:last-child {
+              margin-right: 0;
+              margin-bottom: 110px;
+
+              @include res($tab) {
+                margin-right: 0;
+                margin-bottom: 30px;
+              }
+
+              @include res($mob) {
+                margin-right: 0;
+                margin-bottom: 30px;
+              }
+            }
+
+            .inner {
+              position: absolute;
+              top: 0;
+              left: 0;
+
+              @include res($tab) {
+                position: relative;
+              }
+
+              @include res($mob) {
+                position: relative;
+              }
+
+              .photo {
+                width: 315px;
+                height: 400px;
+
+                @include res($tab) {
+                  width: 100%;
+                  height: auto;
+                }
+
+                @include res($mob) {
+                  width: 100%;
+                  height: auto;
+                }
+
+                img {
+                  width: 315px;
+                  height: 400px;
+
+                  @include res($tab) {
+                    width: 100%;
+                    height: auto;
+                  }
+
+                  @include res($mob) {
+                    width: 100%;
+                    height: auto;
+                  }
+                }
+              }
+
+              .text {
+                position: absolute;
+                width: 290px;
+                top: 287px;
+                left: 0;
+                background: #F6F8FB;
+                border-radius: 1px;
+                padding: 30px 28px 30px 15px;
+
+                @include res($tab) {
+                  position: relative;
+                  top: auto;
+                  width: 100%;
+                }
+
+                @include res($mob) {
+                  position: relative;
+                  top: auto;
+                  width: 100%;
+                }
+
+                .name {
+                  margin-bottom: 15px;
+
+                  font-family: Montserrat;
+                  font-style: normal;
+                  font-weight: 600;
+                  font-size: 20px;
+                  line-height: 28px;
+                  color: #1B1B3A;
+                }
+
+                .description {
+                  font-family: Montserrat;
+                  font-style: normal;
+                  font-weight: 500;
+                  font-size: 14px;
+                  line-height: 22px;
+                  color: #1B1B3A;
+                  opacity: 0.65;
+                }
+              }
+            }
+
+            &:nth-child(1) {
+              .inner {
+                top: -30px;
+
+                @include res($tab) {
+                  top: 0;
+                }
+
+                @include res($mob) {
+                  top: 0;
+                }
+              }
+            }
+
+            &:nth-child(2) {
+              .inner {
+                top: 30px;
+
+                @include res($tab) {
+                  top: 0;
+                }
+
+                @include res($mob) {
+                  top: 0;
+                }
+              }
+            }
+          }
+        }
+
+        .btn_place {
+          width: 100%;
+          text-align: center;
+
+          .btn {
+            display: none;
+
+            @include res($tab) {
+              display: inline-flex;
+            }
+
+            @include res($mob) {
+              display: inline-flex;
+            }
+          }
+        }
+      }
+    }
+  }
+}

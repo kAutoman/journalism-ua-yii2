@@ -1,0 +1,152 @@
+.block_position_container {
+  background: #1B1B3A url("/img/home/block_position/background.svg") no-repeat top;
+  width: 100%;
+
+  .block_position {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    min-height: 555px;
+    position: relative;
+
+    @include res($tab) {
+      padding-top: 50px;
+      min-height: auto;
+    }
+
+    @include res($mob) {
+      padding-top: 50px;
+      min-height: auto;
+    }
+
+    .description {
+      padding: 65px 60px;
+      background: #ffffff;
+      position: absolute;
+      top: 90px;
+      left: 620px;
+
+      @include res($tab) {
+        position: relative;
+        margin: 0 16px;
+        padding: 30px 20px;
+        top: 0;
+        left: 0;
+      }
+
+      @include res($mob) {
+        position: relative;
+        margin: 0 16px;
+        padding: 30px 20px;
+        top: 0;
+        left: 0;
+      }
+
+      .title {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 54px;
+        letter-spacing: -1px;
+        color: #1B1B3A;
+
+        margin-bottom: 24px;
+
+        @include res($tab) {
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 28px;
+          line-height: 32px;
+          letter-spacing: -1px;
+          color: #1B1B3A;
+
+          margin-bottom: 20px;
+        }
+
+        @include res($mob) {
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 28px;
+          line-height: 32px;
+          letter-spacing: -1px;
+          color: #1B1B3A;
+
+          margin-bottom: 20px;
+        }
+      }
+
+      .text {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 28px;
+        color: #000000;
+        opacity: 0.65;
+
+        margin-bottom: 40px;
+
+        @include res($tab) {
+          width: 248px;
+
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 28px;
+          color: #000000;
+          opacity: 0.65;
+
+          margin-bottom: 30px;
+        }
+
+        @include res($mob) {
+          width: 248px;
+
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 28px;
+          color: #000000;
+          opacity: 0.65;
+
+          margin-bottom: 30px;
+        }
+      }
+    }
+
+    .img {
+      position: absolute;
+      top: 180px;
+      left: 0;
+
+      @include res($tab) {
+        display: none;
+        top: 330px;
+        width: 250px;
+        height: 300px;
+
+        img {
+          width: 250px;
+          height: 300px;
+        }
+      }
+
+      @include res($mob) {
+        display: none;
+        top: 330px;
+        width: 250px;
+        height: 300px;
+
+        img {
+          width: 250px;
+          height: 300px;
+        }
+      }
+    }
+  }
+}

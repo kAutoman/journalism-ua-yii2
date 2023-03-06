@@ -1,0 +1,64 @@
+.left_block {
+  width: 400px;
+  float: left;
+
+  @include res($tab) {
+    width: 33%;
+  }
+
+  @include res($mob) {
+    width: 100%;
+
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+
+  .footer_logo {
+    width: 185px;
+    height: 64px;
+    
+    @include res($mob) {
+      width: 114px;
+      height: 40px;
+      display: inline-block;
+      float: left;
+    }
+  }
+
+  .footer_social {
+    list-style: none;
+    margin-top: 34px;
+
+    @include res($mob) {
+      display: inline-block;
+      margin: 10px 0;
+      float: right;
+    }
+
+    li {
+      display: inline-block;
+      margin-right: 20px;
+
+      a {
+        width: 18px;
+        height: 18px;
+        display: block;
+
+        &.social_facebook {
+          background: url("/img/social/facebook.svg") no-repeat center center;
+        }
+
+        &.social_instagram {
+          background: url("/img/social/instagram.svg") no-repeat center center;
+        }
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

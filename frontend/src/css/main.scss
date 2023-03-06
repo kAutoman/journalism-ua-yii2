@@ -1,0 +1,214 @@
+// Base
+@import "mixin/media";
+@import "base/_reset";
+@import "base/_fonts";
+@import "base/_typography";
+// Layout
+@import "layout/_grid";
+
+@import "~owl.carousel/dist/assets/owl.carousel.min.css";
+
+@import "~jquery-custom-select/sass/jquery.custom-select";
+
+@import "~@fancyapps/fancybox/dist/jquery.fancybox.css";
+
+$dark-blue: #1B1B3A;
+$white: #ffffff;
+$dark-white: #F6F8FB;
+
+.popup {
+  &.hidden {
+    display: none;
+  }
+}
+
+.message {
+  .title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: -0.3px;
+    color: #2760B6;
+    margin-bottom: 30px;
+  }
+
+  .text {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #000000;
+  }
+}
+
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #ffffff;
+  z-index: 1001;
+  opacity: 1;
+
+  .preloader__row {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 70px;
+    height: 70px;
+    margin-top: -35px;
+    margin-left: -35px;
+    text-align: center;
+    animation: preloader-rotate 2s infinite linear;
+  }
+}
+
+.loaded {
+  .preloader {
+    opacity: 0;
+    height: 0;
+  }
+}
+
+body {
+  &.on-scroll {
+    overflow: hidden;
+  }
+}
+
+.container-fuild {
+  @import "layout/header";
+  @import "layout/navbar";
+  @import "layout/footer";
+
+  @import "home/block_header";
+  @import "home/block_target";
+  @import "home/block_nomination";
+  @import "home/block_council";
+  @import "home/block_position";
+  @import "home/block_partner";
+
+  @import "participants/block_header";
+  @import "participants/block_text";
+  @import "participants/block_form";
+  @import "participants/block_space";
+
+  @import "criteria/block_text";
+
+  @import "peremozhci/block_text";
+
+  @import "submit/block_header";
+  @import "submit/block_step1";
+  @import "submit/block_step2";
+
+  .btn {
+    margin-top: 30px;
+    padding: 17px 25px;
+    background: #2760B6;
+    border-radius: 1px;
+    display: inline-flex;
+
+    cursor: pointer;
+
+    &:hover {
+      background: #154C9E;
+    }
+
+    span:nth-child(1) {
+      font-family: 'AvenirNextCyr';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 18px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+
+      color: #FFFFFF;
+
+      display: inline-block;
+    }
+
+    span:nth-child(2) {
+      display: inline-flex;
+      width: 14px;
+      align-items: center;
+      justify-content: center;
+      margin-left: 10px;
+
+      i {
+        border-top: 1px solid #ffffff;
+        width: 14px;
+      }
+    }
+
+    @include res($tab) {
+      padding: 17px 30px;
+      background: #2760B6;
+      border-radius: 1px;
+      display: inline-flex;
+
+      span:nth-child(1) {
+        font-family: 'AvenirNextCyr';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        display: inline-block;
+      }
+
+      span:nth-child(2) {
+        display: inline-flex;
+        width: 14px;
+        align-items: center;
+        justify-content: center;
+        margin-left: 10px;
+
+        i {
+          border-top: 1px solid #ffffff;
+          width: 14px;
+        }
+      }
+    }
+
+    @include res($mob) {
+      padding: 17px 30px;
+      background: #2760B6;
+      border-radius: 1px;
+      display: inline-flex;
+
+      span:nth-child(1) {
+        font-family: 'AvenirNextCyr';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        display: inline-block;
+      }
+
+      span:nth-child(2) {
+        display: inline-flex;
+        width: 14px;
+        align-items: center;
+        justify-content: center;
+        margin-left: 10px;
+
+        i {
+          border-top: 1px solid #ffffff;
+          width: 14px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.login-header {
+    position: relative;
+    width: 100%;
+    background: #111;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    z-index: 1;
+}
+
+.login-page .login-header {
+    background-image: url("/img/login-bg.jpg");
+}
+
+.main-title {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 20%;
+    left: 50%;
+}
+
+.login-page .main-title > h1 {
+    text-transform: uppercase;
+    font-size: 4.2em;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color: #F9F1E9;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+}
+
+.login-page .login-box {
+    position: absolute;
+    right: 60%;
+}
+
+.main-title .thin {
+    font-weight: 200;
+}
+
+@media only screen and (max-width: 768px) {
+    .login-page .main-title {
+        font-size: 1em;
+    }
+}

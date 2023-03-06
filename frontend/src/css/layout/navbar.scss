@@ -1,0 +1,11 @@
+.navbar {
+  padding: 30px 60px 0 60px;
+
+  @include res($mob) {
+    padding: 10px 0 16px 0;
+  }
+
+  @import "header_blocks/brand";
+  @import "header_blocks/nav_menu";
+  @import "header_blocks/nav_menu_mobile";
+}

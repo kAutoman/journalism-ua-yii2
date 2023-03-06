@@ -1,0 +1,12 @@
+<div class="form-group" data-field="{{ name }}">
+    <label for="{{ name }}">{{ label }}</label>
+    <select class="form-control" id="{{ name }}" name="{{ name }}_field">
+        <option value="">{{ label }}</option>
+        {% for item in items %}
+            <option value="{{ item.value }}">{{ item.label }}</option>
+        {% endfor %}
+    </select>
+    <input type="text" id="{{ name }}_field" name="{{ name }}" style="height: 0; width: 0; border: none"/>
+    <div class="hint">{{ hint }}</div>
+    <div class="invalid-feedback"></div>
+</div>

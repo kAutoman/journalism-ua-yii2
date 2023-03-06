@@ -1,0 +1,73 @@
+.container {
+  .form_step1 {
+    padding: 60px 120px 120px 120px;
+
+    @include res($tab) {
+      padding: 30px 16px;
+    }
+
+    @include res($mob) {
+      padding: 30px 16px;
+    }
+
+    .head {
+      margin-bottom: 60px;
+
+      .title {
+        display: inline-block;
+        float: left;
+
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 42px;
+        letter-spacing: -0.3px;
+        color: #000000;
+
+        @include res($tab) {
+          display: block;
+          float: none;
+          width: 100%;
+
+          margin-bottom: 20px;
+        }
+
+        @include res($mob) {
+          display: block;
+          float: none;
+          width: 100%;
+
+          margin-bottom: 20px;
+        }
+      }
+
+      .step_title {
+        display: inline-block;
+        float: right;
+
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 40px;
+        letter-spacing: -0.2px;
+        color: #000000;
+
+        @include res($tab) {
+          display: block;
+          float: none;
+          width: 100%;
+        }
+
+        @include res($mob) {
+          display: block;
+          float: none;
+          width: 100%;
+        }
+      }
+    }
+
+    @import "form_field";
+  }
+}

@@ -1,0 +1,122 @@
+{% set material_types = [
+    {
+        label:'Відеоматеріал',
+        value:'відеоматеріал',
+    },
+    {
+        label:'Аудіоматеріал',
+        value:'аудіоматеріал',
+    },
+    {
+        label:'Текстовий матеріал',
+        value:'текстовий матеріал',
+    },
+] %}
+{% set nominations = [
+    {
+        label:'Найкраще інтерв’ю',
+        value:'Найкраще інтерв’ю',
+    },
+    {
+        label:'Найкращий репортаж',
+        value:'Найкращий репортаж',
+    },
+    {
+        label:'Найкраще новинне висвітлення резонансної події',
+        value:'Найкраще новинне висвітлення резонансної події',
+    },
+    {
+        label:'Найкраща аналітика',
+        value:'Найкраща аналітика',
+    },
+    {
+        label:'Найкраще розслідування',
+        value:'Найкраще розслідування',
+    },
+    {
+        label:'Найкраща публіцистика',
+        value:'Найкраща публіцистика',
+    },
+    {
+        label:'Спецномінація "Конструктивна журналістика"',
+        value:"Спецномінація Конструктивна журналістика",
+    },
+] %}
+{% set fields = [
+    {
+        type:'title',
+        label:'Iнформацiя про конкурсну роботу',
+    },
+    {
+        type:'text',
+        label:'ПІБ iнших авторiв (якщо такi є)',
+        name:'other_name',
+    },
+    {
+        type:'text_area',
+        label:'Назва матеріалу',
+        name:'material_label',
+        hint:'*(без лапок та додаткових знаків)'
+    },
+    {
+        type:'dropdown',
+        label:'Тип матеріалу',
+        name:'material_type',
+        items:material_types
+    },
+    {
+        type:'text',
+        label:'Назва програми чи видання',
+        name:'program_label',
+    },
+    {
+        type:'text',
+        label:'Дата виходу/публікації матеріалу',
+        name:'program_published_date',
+    },
+    {
+        type:'text_area',
+        label:'Посилання на матерiал',
+        name:'program_link',
+        hint:'(youtube, vimeo, soundcloud, сайт) або файлообмінник, де розміщена скан-копія'
+    },
+    {
+        type:'dropdown',
+        label:'Назва номінації',
+        name:'nomination',
+        items:nominations,
+        hint:'<a href="/criteria.html" target="_blank">Обов\'язково перевірте відповідність матеріалу критеріям номінації</a>'
+    },
+    {
+        type:'text_area',
+        label:'Мотивація/аргументація участі у конкурсі',
+        name:'argument',
+    },
+    {
+        type:'text_area',
+        label:'Професійні нагороди та відзнаки за останні 3 роки',
+        name:'awards',
+    },
+    {
+        type:'aggree',
+    },
+    {
+        type:'btn_submit',
+        label:'Подати заявку',
+    },
+] %}
+<div class="container">
+    <div class="form_step2">
+        <form action="/submit.html" class="step2_form" method="post">
+            <div class="head clearfix">
+                <div class="title">Заповніть форму</div>
+                <div class="step_title">Крок: 2 / 2</div>
+            </div>
+            <div class="body">
+                {% for field in fields %}
+                    {% include ['form/form_',field.type,'.twig']|join('') with {name:field.name, label:field.label, items:field.items, hint:field.hint} %}
+                {% endfor %}
+            </div>
+        </form>
+    </div>
+</div>

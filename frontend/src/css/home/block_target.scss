@@ -1,0 +1,236 @@
+.block_target {
+  padding: 160px 120px 148px 120px;
+
+  @include res($tab) {
+    padding: 320px 16px 0 16px;
+  }
+
+  @include res($mob) {
+    padding: 320px 16px 0 16px;
+  }
+
+  .title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 54px;
+    letter-spacing: -1px;
+    color: #1B1B3A;
+
+    @include res($tab) {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 28px;
+      line-height: 32px;
+      letter-spacing: -1px;
+      color: #1B1B3A;
+    }
+
+    @include res($mob) {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 28px;
+      line-height: 32px;
+      letter-spacing: -1px;
+      color: #1B1B3A;
+    }
+  }
+
+  .sub_title {
+    margin-top: 60px;
+
+    @include res($tab) {
+      margin-top: 30px;
+    }
+
+    @include res($mob) {
+      margin-top: 30px;
+    }
+
+    .text_left {
+      width: 465px;
+      margin-right: 64px;
+      display: inline-block;
+      padding-left: 25px;
+      position: relative;
+
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 30px;
+      color: #000000;
+      opacity: 0.7;
+
+      &:before {
+        background: url("/img/home/block_target/wave_mini.svg") no-repeat center center;
+        width: 10px;
+        height: 25px;
+        content: '';
+        display: block;
+        position: absolute;
+        top: 7px;
+        left: 0;
+      }
+
+      @include res($tab) {
+        width: 100%;
+        margin-right: 0;
+        display: block;
+        margin-bottom: 20px;
+      }
+
+      @include res($mob) {
+        width: 100%;
+        margin-right: 0;
+        display: block;
+        margin-bottom: 20px;
+      }
+    }
+
+    .text_right {
+      width: 465px;
+      display: inline-block;
+      padding-left: 25px;
+      position: relative;
+
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 30px;
+      color: #000000;
+      opacity: 0.7;
+
+      &:before {
+        background: url("/img/home/block_target/wave_mini.svg") no-repeat center center;
+        width: 10px;
+        height: 25px;
+        content: '';
+        display: block;
+        position: absolute;
+        top: 7px;
+        left: 0;
+      }
+
+      @include res($tab) {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 50px;
+        display: block;
+      }
+
+      @include res($mob) {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 50px;
+        display: block;
+      }
+    }
+  }
+
+  .block_img {
+    margin-top: 50px;
+    position: relative;
+
+    @include res($tab) {
+      margin: 0 -30px 320px -30px;
+    }
+
+    @include res($mob) {
+      margin: 0 -30px 320px -30px;
+    }
+
+    img {
+      width: 100%;
+      height: 440px;
+
+      @include res($tab) {
+        height: auto;
+      }
+
+      @include res($mob) {
+        height: auto;
+      }
+    }
+
+    .block_description {
+      position: absolute;
+      top: 340px;
+      left: 290px;
+      background: #ffffff;
+      padding: 20px 16px 20px 28px;
+
+      @include res($tab) {
+        top: 117px;
+        left: auto;
+        right: 0;
+      }
+
+      @include res($mob) {
+        top: 117px;
+        left: auto;
+        right: 0;
+      }
+
+      p {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 28px;
+        color: #1B1B3A;
+        opacity: 0.8;
+
+        @include res($tab) {
+          width: 228px;
+
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 28px;
+          color: #1B1B3A;
+          opacity: 0.8;
+        }
+
+        @include res($mob) {
+          width: 228px;
+
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 28px;
+          color: #1B1B3A;
+          opacity: 0.8;
+        }
+      }
+
+      &:after {
+        background: url("/img/home/block_target/wave.svg") no-repeat center center;
+        width: 50px;
+        height: 115px;
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: -33px;
+      }
+
+      &:before {
+        background: #ffffff;
+        width: 145px;
+        height: 55px;
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: -15px;
+      }
+    }
+  }
+}

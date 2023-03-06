@@ -1,0 +1,19 @@
+{% extends './template/parts/layout.twig' %}
+
+{% block title %}Критерії оцінки номінацій{% endblock %}
+
+{% block content %}
+    {% include 'template/parts/header.twig' with {'block':'../criteria/header_block.twig', 'page':'criteria'} %}
+
+    <div class="criteria_text_block">
+        {% include 'template/criteria/block_text1.twig' %}
+        {% include 'template/criteria/block_text2.twig' %}
+        {% include 'template/criteria/block_text3.twig' %}
+        {% include 'template/criteria/block_text4.twig' %}
+        {% include 'template/criteria/block_text5.twig' %}
+        {% include 'template/criteria/block_text6.twig' %}
+        {% include 'template/criteria/block_text7.twig' %}
+    </div>
+
+    {% include 'template/parts/footer/footer.twig' with {'page':'criteria'} %}
+{% endblock %}

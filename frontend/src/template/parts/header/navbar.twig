@@ -1,0 +1,10 @@
+<div class="navbar clearfix">
+    {% include 'brand.twig' %}
+    {% include 'menu.twig' with {'page':page} %}
+    <div class="mobile_toggle">
+        <i></i>
+        <i></i>
+        <i></i>
+    </div>
+    {% include 'menu_mobile.twig' with {'page':page} %}
+</div>

@@ -1,0 +1,90 @@
+{% set items = [
+    [
+        {
+            photo:'/img/home/block_council/volodimir_mostovy.png',
+            name:'Володимир Мостовий',
+            description:'Засновник та шеф-редактор газети «Дзеркало Тижня»',
+        },
+        {
+            photo:'/img/home/block_council/andriy_kulikov.png',
+            name:'Андрій Куликов',
+            description:'Професійний радіо- та телеведучий, голова правління ГО «Громадське радіо»',
+        },
+        {
+            photo:'/img/home/block_council/nataliya_ligachova.png',
+            name:'Наталія Лигачова',
+            description:'Голова ГО «Детектор медіа», шеф-редакторка порталу «Детектор медіа»',
+        },
+    ],
+    [
+        {
+            photo:'/img/home/block_council/oleksiy_mustafin.png',
+            name:'Олексій Мустафін',
+            description:'Журналіст і медіаменеджер, екс-продюсер новин «Медіа Групи Україна»',
+        },
+        {
+            photo:'/img/home/block_council/valery_ivanov.png',
+            name:'Валерій Іванов',
+            description:'Професор, президент Академії української преси',
+        },
+        {
+            photo:'/img/home/block_council/diana_dutsik.png',
+            name:'Діана Дуцик',
+            description:'Медіатренерка, журналістка, викладачка Могилянської школи журналістики, виконавча директорка ГО “Український інститут медіа та комунікації”',
+        },
+    ],
+    [
+        {
+            photo:'/img/home/block_council/oleg_khomenok.png',
+            name:'Олег Хоменок',
+            description:'Медіа-тренер, старший радник з питань медіа Internews Network, член Ради директорів GIJN – Глобальної мережі журналістів-розслідувачів',
+        },
+        {
+            photo:'/img/home/block_council/zurab_alasaniya.png',
+            name:'Зураб Аласанія',
+            description:'Голова правління ПАТ "НСТУ"',
+        },
+    ],
+] %}
+<div class="container container_council">
+    <div class="sub_container">
+        <div class="block_council">
+            <div class="head clearfix">
+                <div class="title">Наглядова Рада</div>
+                <div class="description">
+                    <p>
+                        Це контрольно-ревізійний орган Конкурсу. Наглядова Рада розробляла філософію та основоположні
+                        елементи Конкурсу – від Положення до номінацій, а також розглядає скарги в разі їх наявності та
+                        здійснює контроль точності виконання існуючого Положення Конкурсу.
+                    </p>
+                </div>
+            </div>
+            <div class="body">
+                {% for _items in items %}
+                    <div class="row clearfix">
+                        {% for item in _items %}
+                            <div class="item">
+                                <div class="inner">
+                                    <div class="photo">
+                                        <img src="{{ item.photo }}" alt="{{ item.name }}"/>
+                                    </div>
+                                    <div class="text">
+                                        <div class="name">{{ item.name }}</div>
+                                        <div class="description">{{ item.description }}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                {% endfor %}
+
+                <div class="btn_place">
+                    <a href="#" class="btn">
+                        <span>ПОКАЗАТИ ЩЕ</span>
+                        <span><i></i></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

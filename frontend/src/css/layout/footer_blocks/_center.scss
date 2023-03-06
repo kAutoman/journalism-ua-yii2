@@ -1,0 +1,36 @@
+.center_block {
+  float: left;
+
+  @include res($tab) {
+    width: 33%;
+  }
+
+  @include res($mob) {
+    margin-top: 30px;
+  }
+
+  ul {
+    list-style: none;
+
+    li {
+      margin-bottom: 16px;
+
+      a {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 28px;
+        color: #ffffff;
+
+        &:hover {
+          color: #2760B6;
+        }
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

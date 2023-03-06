@@ -1,0 +1,128 @@
+.block_header {
+  .container {
+    &.header_container_index {
+      min-height: 570px;
+    }
+  }
+}
+
+.home_block_header {
+  margin: 80px 120px 0 120px;
+
+  @include res($tab) {
+    margin: 0 16px;
+  }
+
+  @include res($mob) {
+    margin: 0 16px;
+  }
+
+  .block_left {
+    float: left;
+    width: calc(100% - 500px);
+
+    @include res($tab) {
+      float: none;
+      width: 100%;
+    }
+
+    @include res($mob) {
+      float: none;
+      width: 100%;
+    }
+
+    .block_title {
+      width: 500px;
+
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 66px;
+      line-height: 78px;
+      letter-spacing: -1px;
+      color: #FFFFFF;
+
+      @include res($mob) {
+        width: 100%;
+
+        margin-bottom: 50px;
+
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 38px;
+        letter-spacing: -1px;
+        color: #FFFFFF;
+      }
+    }
+
+    .block_description {
+      margin: 87px 0 0 100px;
+      padding: 48px 45px;
+      background: #ffffff;
+
+      @include res($tab) {
+        margin: 0;
+        padding: 30px 20px;
+      }
+
+      @include res($mob) {
+        margin: 0;
+        padding: 30px 20px;
+      }
+
+      p {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 28px;
+        color: #1B1B3A;
+        opacity: 0.8;
+      }
+    }
+  }
+
+  .block_right {
+    width: 500px;
+    float: right;
+    position: relative;
+
+    @include res($tab) {
+      width: 100%;
+      float: none;
+    }
+
+    @include res($mob) {
+      width: 100%;
+      float: none;
+    }
+
+    .block_img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 500px;
+      height: 650px;
+
+      @include res($tab) {
+        width: 100%;
+        height: auto;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      @include res($mob) {
+        width: 100%;
+        height: auto;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

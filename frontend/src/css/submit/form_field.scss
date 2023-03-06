@@ -1,0 +1,242 @@
+form {
+  .body {
+    .form-group {
+      width: 100%;
+      max-width: 560px;
+
+      margin: 0 auto;
+      margin-bottom: 20px;
+
+      &.form-group-title {
+        margin-bottom: 30px;
+      }
+
+      &.form-group-btn {
+        margin-top: 40px;
+        margin-bottom: 0;
+
+        text-align: center;
+      }
+
+      .form_title {
+        display: block;
+
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 28px;
+        color: #1B1B3A;
+      }
+
+      label {
+        display: none;
+      }
+
+      .form-control {
+        &::placeholder {
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 28px;
+
+          color: rgba(27, 27, 58, 125);
+
+          opacity: 0.5;
+        }
+      }
+
+      input {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 28px;
+
+        color: rgba(27, 27, 58, 125);
+
+        &.form-control {
+          display: block;
+          width: 100%;
+          padding: 12px 0 12px 20px;
+
+          border: 1px solid rgba(0, 0, 0, 40);
+          box-sizing: border-box;
+          border-radius: 1px;
+
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 28px;
+
+          color: rgba(27, 27, 58, 125);
+        }
+      }
+
+      select {
+        &.form-control {
+          display: block;
+          width: 100%;
+          padding: 12px 0 12px 20px;
+
+          border: 1px solid rgba(0, 0, 0, 40);
+          box-sizing: border-box;
+          border-radius: 1px;
+
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 28px;
+
+          color: rgba(27, 27, 58, 125);
+
+          background: #ffffff;
+        }
+      }
+
+      .custom-select {
+        .custom-select__option {
+          display: block;
+          width: 100%;
+          padding: 12px 0 12px 20px;
+
+          border: 1px solid rgba(0, 0, 0, 40);
+          box-sizing: border-box;
+          border-radius: 1px;
+
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 28px;
+
+          color: rgba(27, 27, 58, 125);
+
+          background: #ffffff;
+
+          opacity: 0.5;
+
+          &:after {
+            border: none;
+            background: url("/img/common/arrow_down_dark.svg") no-repeat;
+            width: 15px;
+            height: 8px;
+            content: '';
+
+            opacity: 1;
+          }
+        }
+
+        &.custom-select--active {
+          .custom-select__option {
+            &:after {
+              transform: rotateX(180deg) translateY(50%);
+            }
+          }
+        }
+
+        .custom-select__dropdown {
+          border: 1px solid #000000;
+
+          margin-top: 5px;
+          padding: 20px;
+
+          .custom-select__option {
+            border: none;
+
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 28px;
+            color: #1B1B3A;
+
+            opacity: 0.5;
+
+            &:hover {
+              opacity: 1;
+            }
+          }
+        }
+      }
+
+      button {
+      }
+
+      .hint {
+        float: left;
+        margin-top: 5px;
+
+        font-family: AvenirNextCyr;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+
+        color: #1B1B3A;
+
+        a {
+          text-decoration: underline;
+        }
+      }
+
+      &.error {
+        .hint {
+          display: none;
+        }
+
+        .error {
+          float: right;
+          margin-top: 5px;
+
+          font-family: AvenirNextCyr;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 18px;
+
+          color: #EF132D;
+        }
+
+        .form-control {
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 28px;
+
+          color: #EF132D;
+
+          &::placeholder {
+            color: #EF132D;
+          }
+        }
+
+        .custom-select {
+          .custom-select__option {
+            &.custom-select__option--value {
+              color: #EF132D;
+            }
+          }
+        }
+      }
+
+      &:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      .aggree-text {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 28px;
+      }
+    }
+  }
+}

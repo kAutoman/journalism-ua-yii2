@@ -1,0 +1,70 @@
+.header-nav-menu {
+  float: right;
+  padding-top: 12px;
+
+  ul {
+    list-style: none;
+
+    li {
+      list-style: none;
+      display: inline-block;
+      margin-right: 48px;
+      padding: 13px 0;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+
+      a {
+        font-family: AvenirNextCyr;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+
+        color: $white;
+        opacity: 0.5;
+
+        &.active {
+          position: relative;
+
+          color: $white;
+          opacity: 1;
+
+          &:after {
+            top: 24px;
+            position: absolute;
+            content: "";
+            height: 2px;
+            width: 30px;
+            display: block;
+            background-color: $white;
+            bottom: 0;
+          }
+        }
+
+        &:hover {
+          position: relative;
+          
+          color: $white;
+          opacity: 1;
+
+          &:after {
+            top: 24px;
+            position: absolute;
+            content: "";
+            height: 2px;
+            width: 30px;
+            display: block;
+            background-color: $white;
+            bottom: 0;
+          }
+        }
+      }
+    }
+  }
+
+  @include res($mob) {
+    display: none;
+  }
+}

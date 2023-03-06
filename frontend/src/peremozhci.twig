@@ -1,0 +1,23 @@
+{% extends './template/parts/layout.twig' %}
+
+{% block title %}Шорт-лист переможців{% endblock %}
+
+{% block content %}
+    {% include 'template/parts/header.twig' with {'block':'../peremozhci/header_block.twig', 'page':'peremozhci'} %}
+
+    <div class="peremozhci_text_block">
+        {% include 'template/peremozhci/block_head.twig' %}
+
+        {% include 'template/peremozhci/block_best_interview.twig' %}
+        {% include 'template/peremozhci/block_best_report.twig' %}
+        {% include 'template/peremozhci/block_best_resonant.twig' %}
+        {% include 'template/peremozhci/block_best_analyst.twig' %}
+        {% include 'template/peremozhci/block_best_investigation.twig' %}
+        {% include 'template/peremozhci/block_best_journalism.twig' %}
+        {% include 'template/peremozhci/block_best_special.twig' %}
+
+        {% include 'template/peremozhci/block_footer.twig' %}
+    </div>
+
+    {% include 'template/parts/footer/footer.twig' with {'page':'peremozhci'} %}
+{% endblock %}

@@ -1,0 +1,129 @@
+.block_nomination_container {
+  background: #1B1B3A url("/img/home/block_nomination/background.svg") no-repeat center;
+  width: 100%;
+
+  .block_nomination {
+    width: 100%;
+    max-width: 1280px;
+    padding: 0 15px;
+    margin: 0 auto;
+
+    .head {
+      padding: 90px 150px 55px 150px;
+
+      @include res($tab) {
+        padding: 50px 16px 30px 16px;
+      }
+
+      @include res($mob) {
+        padding: 50px 16px 30px 16px;
+      }
+
+      .title {
+        width: 49%;
+        float: left;
+
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 54px;
+        letter-spacing: -1px;
+        color: #FFFFFF;
+
+        @include res($tab) {
+          width: auto;
+          float: none;
+
+          padding-bottom: 30px;
+
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 28px;
+          line-height: 32px;
+          letter-spacing: -1px;
+          color: #FFFFFF;
+        }
+
+        @include res($mob) {
+          width: auto;
+          float: none;
+
+          padding-bottom: 30px;
+
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 28px;
+          line-height: 32px;
+          letter-spacing: -1px;
+          color: #FFFFFF;
+        }
+      }
+
+      .controll {
+        width: 49%;
+        float: right;
+
+        @include res($tab) {
+          width: auto;
+          float: none;
+        }
+
+        @include res($mob) {
+          width: auto;
+          float: none;
+        }
+      }
+    }
+
+    .body {
+      position: relative;
+      min-height: 370px;
+
+      .owl-carousel {
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        .owl-stage-outer {
+          padding: 5px;
+
+          .carusel_item {
+            background: #ffffff;
+            width: 350px;
+            height: 425px;
+            margin-right: 38px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            border-radius: 2px;
+
+            a {
+              display: block;
+              padding: 130px 40px 0 40px;
+
+              .icon {
+                img {
+                  width: 56px;
+                  height: 56px;
+                }
+              }
+
+              .description {
+                p {
+                  font-family: Montserrat;
+                  font-style: normal;
+                  font-weight: 600;
+                  font-size: 28px;
+                  line-height: 40px;
+                  letter-spacing: -0.2px;
+                  color: #1B1B3A;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

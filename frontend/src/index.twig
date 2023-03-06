@@ -1,0 +1,15 @@
+{% extends './template/parts/layout.twig' %}
+
+{% block title %}Головна{% endblock %}
+
+{% block content %}
+    {% include 'template/parts/header.twig' with {'block':'../home/header_block.twig', 'page':'index'} %}
+
+    {% include 'template/home/block_target.twig' %}
+    {% include 'template/home/block_nomination.twig' %}
+    {% include 'template/home/block_council.twig' %}
+    {% include 'template/home/block_position.twig' %}
+    {% include 'template/home/block_partner.twig' %}
+
+    {% include 'template/parts/footer/footer.twig' with {'page':'index'} %}
+{% endblock %}

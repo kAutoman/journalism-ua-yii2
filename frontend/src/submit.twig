@@ -1,0 +1,14 @@
+{% extends './template/parts/layout.twig' %}
+
+{% block title %}Подати заявку{% endblock %}
+
+{% block content %}
+    {% include 'template/parts/header.twig' with {'block':'../submit/header_block.twig', 'page':'submit'} %}
+
+    {% include 'template/submit/block_step1.twig' %}
+    {% include 'template/submit/block_step2.twig' %}
+
+    {% include 'template/parts/footer/footer.twig' with {'page':'submit'} %}
+
+    {% include 'template/parts/footer/popup.twig' %}
+{% endblock %}

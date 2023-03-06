@@ -1,0 +1,18 @@
+.brand {
+  float: left;
+  display: block;
+
+  a {
+    display: block;
+
+    img {
+      width: 185px;
+      height: 64px;
+
+      @include res($mob) {
+        width: 116px;
+        height: 40px;
+      }
+    }
+  }
+}

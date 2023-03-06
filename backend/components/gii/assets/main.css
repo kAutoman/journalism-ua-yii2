@@ -1,0 +1,14 @@
+.default-view .modal-dialog {
+    width: 90%;
+}
+
+#form-fields {
+    width: 100%;
+}
+
+
+/* module configurator */
+#generator-selectedmodules label {
+    margin-right: 30px;
+}
+/* module configurator */

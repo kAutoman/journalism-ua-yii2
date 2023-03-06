@@ -1,0 +1,47 @@
+{
+  "name": "profession-honor",
+  "version": "1.0.0",
+  "author": "Vintage",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "watch": "webpack --mode development --watch",
+    "start": "webpack-dev-server --mode development --open"
+  },
+  "dependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
+    "jquery": "^3.4.1",
+    "jquery-custom-select": "^1.6.4",
+    "jquery-mask-plugin": "^1.14.16",
+    "jquery-validation": "^1.19.1",
+    "lodash": "^4.17.15",
+    "node-sass": "^4.13.1",
+    "owl.carousel": "^2.3.4",
+    "sass-loader": "^8.0.2",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^5.1.1",
+    "css-loader": "^3.4.2",
+    "file-loader": "^5.0.2",
+    "html-loader": "^0.5.5",
+    "html-minifier-webpack-plugin": "^2.2.3",
+    "html-webpack-plugin": "^3.2.0",
+    "image-webpack-loader": "^6.0.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "raw-loader": "^4.0.0",
+    "reset-css": "^5.0.1",
+    "svg-inline-loader": "^0.8.0",
+    "terser-webpack-plugin": "^2.3.5",
+    "twig-html-loader": "^0.1.7",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "url-loader": "^3.0.0",
+    "webpack-bundle-analyzer": "^3.6.0",
+    "webpack-dev-server": "^3.10.3"
+  }
+}

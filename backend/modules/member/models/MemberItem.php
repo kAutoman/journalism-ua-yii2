@@ -71,7 +71,7 @@ class MemberItem extends CommonMemberItem implements BackendModel
                 ['image'],
                 FileRequiredValidator::class,
                 'saveAttribute' => self::SAVE_ATTRIBUTE_IMAGE,
-                'skipOnEmpty' => false
+                'skipOnEmpty' => true
             ],
         ];
     }

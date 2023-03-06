@@ -20,7 +20,7 @@ use common\modules\config\infrastructure\repositories\IStorageRepository;
 class FileRequiredValidator extends Validator
 {
     /**  @var bool Skip check on empty filed value. */
-    public $skipOnEmpty = false;
+    public $skipOnEmpty = true;
     /** @var string Message for error. */
     public $message;
 

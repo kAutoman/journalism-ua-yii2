@@ -11,7 +11,7 @@ import 'jquery-custom-select'
 export default class Submit {
   constructor () {
      $.ajax({
-      url: 'http://api.journalismaward.in.ua/nominations/index',
+      url: 'https://api.journalismaward.in.ua/nominations/index',
       method: 'GET',
       type: 'json',
       success: function (response) {
@@ -20,16 +20,27 @@ export default class Submit {
             html += `<option value="${temp.label}">${ temp.label }</option>`;
         });
         $('#nomination').html(html);
-        let select = $('#nomination');
+        $('#nomination').customSelect();
+        $('#material_type').customSelect();
+        $('#gender').customSelect();
 
-        select.customSelect()
-
-        select.change(function () {
+        $('#nomination').change(function () {
           console.log($('#' + this.id + '_field').get(0))
           $('#' + this.id + '_field').
             attr('value', $(this).find('option:selected').val())
         })
-        // $('#nomination').customSelect();
+
+        $('#material_type').change(function () {
+          console.log($('#' + this.id + '_field').get(0))
+          $('#' + this.id + '_field').
+            attr('value', $(this).find('option:selected').val())
+        })
+
+        $('#gender').change(function () {
+          console.log($('#' + this.id + '_field').get(0))
+          $('#' + this.id + '_field').
+            attr('value', $(this).find('option:selected').val())
+        })
       },
       error: function () {
         alert('server error!');

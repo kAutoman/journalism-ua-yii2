@@ -34,8 +34,6 @@ class ActionSubmit extends Action
      */
     public function run()
     {
-        response()->setStatusCode(422);
-        exit();
         if (request()->getIsPost() || request()->getIsOptions()) {
             $post = request()->post();
             /** @var ActiveRecord $model */

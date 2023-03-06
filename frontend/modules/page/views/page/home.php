@@ -47,7 +47,7 @@
             <div class="home_block_header clearfix">
                 <div class="block_left">
                     <div class="block_title">Конкурс професiйної журналiстики</div>
-                    <div class="block_description"><p>Прийом матеріалів на конкурс відкрито до 20 березня 2023 року!</p><a
+                    <div class="block_description"><p>Прийом матеріалів на конкурс відкрито з 1 березня 2023 року!</p><a
                             class="btn" href="/submit.html"><span>Подати заявку/Анкета учасника</span> <span><i></i></span></a></div>
                 </div>
                 <div class="block_right">
@@ -249,8 +249,14 @@
                     <div class="btn_place"><a href="#" class="btn"><span>ПОКАЗАТИ ЩЕ</span> <span><i></i></span></a>
                     </div>
 								
+								
+                
+						
+								
             <div class="description">
-                <a class="btn" href="/files/Список-Ради-експертів-ЧП-2023.pdf" target="_blank"><span>Рада експертів</span>
+                    <div class="text" style="opacity: 0.65;"><p style="font-family:Montserrat;">Орган управління конкурсу, який складається з формальних і неформальних лідерів медіаспільноти та обирає 
+					Журі конкурсу зі складу своїх членів шляхом рейтингового голосування.</p></div>
+                <a class="btn" href="/files/Список-Ради-експертів-ЧП-2023-2.pdf" target="_blank"><span>Рада експертів</span>
                     <span><i></i></span></a></div>
                 </div>
             </div>

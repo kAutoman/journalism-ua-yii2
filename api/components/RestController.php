@@ -41,7 +41,7 @@ class RestController extends Controller
         $behaviors['corsFilter'] = [
             'class' => Cors::class,
             'cors' => [
-                'Origin' => ['*'],
+                // 'Origin' => ['*'],
                 'Access-Control-Request-Method' => ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'HEAD', 'OPTIONS'],
                 'Access-Control-Request-Headers' => [ // do not use wildcard for iOS <= 12 compatibility
                     'Accept',

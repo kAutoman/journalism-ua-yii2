@@ -12,7 +12,7 @@ use backend\modules\member\models\MemberItem;
  */
 class MemberItemController extends BackendController
 {
-    public $canCreate = false;
+    public $canCreate = true;
 
     public $canDelete = false;
 

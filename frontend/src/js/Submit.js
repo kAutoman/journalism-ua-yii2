@@ -11,7 +11,7 @@ import 'jquery-custom-select'
 export default class Submit {
   constructor () {
      $.ajax({
-      url: 'http://127.0.0.2/nominations/index',
+      url: 'https://api.journalismaward.in.ua/nominations/index',
       method: 'GET',
       type: 'json',
       success: function (response) {
@@ -193,7 +193,7 @@ export default class Submit {
     let that = this
 
     $.ajax({
-      url: 'http://127.0.0.2/submit-request',
+      url: 'https://api.journalismaward.in.ua/submit-request',
       method: 'POST',
       type: 'json',
       data: data,

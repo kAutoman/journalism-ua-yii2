@@ -6,6 +6,7 @@ use common\models\CompetitionRequest;
 use common\modules\config\application\components\AggregateMaker;
 use common\modules\config\application\entities\CompetitionRequest as CompetitionRequestConfig;
 use yii\behaviors\TimestampBehavior;
+use yii\db\Query;
 
 /**
  * Class SubmitForm
@@ -112,26 +113,20 @@ class CompetitionRequestForm extends CompetitionRequest
      */
     public function beforeSave($insert)
     {
-        $list = [
-            1 => 'Найкраще інтерв’ю',
-            2 => 'Найкращий репортаж',
-            3 => 'Найкраще новинне висвітлення резонансної події',
-            4 => 'Найкраща аналітика',
-            5 => 'Найкраще розслідування',
-            6 => 'Найкраща публіцистика',
-            7 => 'Спецномінація Конструктивна журналістика',
-            8 => 'Спецномінація Пояснювальна журналістика в часи пандемії',
-            9 => 'Спецномінація Експерт-знахідка',
-            10 => 'Спецномінація Найкращий матеріал на тему дотримання професійних стандартів, журналістської етики та саморегуляції',
-            11 => 'Спецномінація Найкращий журналістський експеримент',
-        ];
-
-        $key = (int)array_search($this->nomination, $list);
-
-        if ($key) {
-            $this->nomination_id = $key;
+        $query = new Query;
+        // compose the query
+        $query->select('model_id, label')
+            ->from('member_item_lang')
+            ->where(['label'=>$this->nomination]);
+        // build and execute the query
+        $nomination = $query->one();
+        if(empty($nomination)){
+            echo 'Error: Can not find nomination id from database!';
+            exit();
         }
 
+        $this->nomination_id = $nomination['model_id'];
+        
         return parent::beforeSave($insert);
     }
 }

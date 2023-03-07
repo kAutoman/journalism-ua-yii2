@@ -13,7 +13,7 @@ use backend\components\grid\TranslateColumn;
 use backend\components\grid\StylingActionColumn;
 use backend\modules\imagesUpload\widgets\imagesUpload\ImageUpload;
 use common\models\base\EntityToFile;
-
+use yii\db\Query;
 
 /**
  * This is the model class for table "{{%member_item}}".
@@ -218,12 +218,15 @@ class MemberItem extends CommonMemberItem implements BackendModel
      */
     public static function getListByUser()
     {
-        if (user()->can(User::ROLE_JURY) || user()->can(User::ROLE_MODERATOR)) {
-            /** @var User $user */
-            $user = user()->getIdentity();
+        // if (user()->can(User::ROLE_JURY) || user()->can(User::ROLE_MODERATOR)) {
+        //     /** @var User $user */
+        //     $user = user()->getIdentity();
+        //     // var_dump($user);
 
-            return map($user->memberItems, 'id', 'label');
-        }
+        //     return map($user->memberItems, 'id', 'label');
+        // }
+
+        // return map(self::find()->all(), $from, $to);
 
         return self::getListItems();
     }

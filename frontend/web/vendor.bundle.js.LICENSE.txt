@@ -3,35 +3,77 @@
  */
 
 /*!
- * Sizzle CSS Selector Engine v2.3.4
+ * Sizzle CSS Selector Engine v2.3.9
  * https://sizzlejs.com/
  *
  * Copyright JS Foundation and other contributors
  * Released under the MIT license
  * https://js.foundation/
  *
- * Date: 2019-04-08
+ * Date: 2022-12-19
  */
 
 /*!
- * jQuery JavaScript Library v3.4.1
+ * jQuery JavaScript Library v3.6.3
  * https://jquery.com/
  *
  * Includes Sizzle.js
  * https://sizzlejs.com/
  *
- * Copyright JS Foundation and other contributors
+ * Copyright OpenJS Foundation and other contributors
  * Released under the MIT license
  * https://jquery.org/license
  *
- * Date: 2019-05-01T21:04Z
+ * Date: 2022-12-20T21:28Z
  */
 
 /*!
- * jQuery Validation Plugin v1.19.1
+ * jQuery Validation Plugin v1.19.5
  *
  * https://jqueryvalidation.org/
  *
- * Copyright (c) 2019 Jörn Zaefferer
+ * Copyright (c) 2022 Jörn Zaefferer
  * Released under the MIT license
  */
+
+/*! ../jquery.validate */
+
+/*! ./jquery.validate */
+
+/*! exports provided: default */
+
+/*! jquery */
+
+/*! no static exports found */
+
+/*!********************************************!*\
+  !*** ./node_modules/jquery/dist/jquery.js ***!
+  \********************************************/
+
+/*!********************************************************!*\
+  !*** ./node_modules/owl.carousel/dist/owl.carousel.js ***!
+  \********************************************************/
+
+/*!*************************************************************!*\
+  !*** ./node_modules/jquery-mask-plugin/dist/jquery.mask.js ***!
+  \*************************************************************/
+
+/*!****************************************************************!*\
+  !*** ./node_modules/jquery-validation/dist/jquery.validate.js ***!
+  \****************************************************************/
+
+/*!******************************************************************!*\
+  !*** ./node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js ***!
+  \******************************************************************/
+
+/*!*******************************************************************!*\
+  !*** ./node_modules/jquery-custom-select/jquery.custom-select.js ***!
+  \*******************************************************************/
+
+/*!*******************************************************************!*\
+  !*** ./node_modules/jquery-validation/dist/additional-methods.js ***!
+  \*******************************************************************/
+
+/*!*************************************************************************!*\
+  !*** ./node_modules/jquery-validation/dist/localization/messages_uk.js ***!
+  \*************************************************************************/

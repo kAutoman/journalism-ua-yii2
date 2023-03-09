@@ -140,7 +140,7 @@
             <div class="text">
                 <div class="timeline">
                     <div class="row clearfix">
-                        <div class="date">1 березня</div>
+                        <div class="date">1 березня/</div>
                         <div class="message">
                             <div class="stage">ЕТАП 1</div>
                             <div class="text">Прийом заявок</div>

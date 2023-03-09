@@ -28,7 +28,9 @@ class NominationsController extends RestController
         $query = new Query;
         // compose the query
         $query->select('model_id, label')
-            ->from('member_item_lang');
+            ->from('member_item_lang')
+            ->join('LEFT JOIN', 'member_item', 'member_item.id = member_item_lang.model_id')
+            ->where(['member_item.published',1]);
         // build and execute the query
         $rows = $query->all();
         return $rows;
